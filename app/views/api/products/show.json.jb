@@ -1,0 +1,7 @@
+{
+  id: @product.id,
+  name: @product.name,
+  matrials: @product.materials,
+  price: @product.price,
+  sale_status: @product.sale_status
+}
