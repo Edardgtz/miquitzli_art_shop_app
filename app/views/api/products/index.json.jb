@@ -4,6 +4,6 @@
     name: product.name,
     materials: product.materials,
     price: product.price,
-    sale_status: product.sale_status
+    sale_status: product.sale_status,
   }
 end
