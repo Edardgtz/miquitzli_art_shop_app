@@ -8,8 +8,10 @@
 
 
 require 'faker'
-100.times do 
-  Product.create!(name: Faker::Commerce.product_name, materials: Faker::Commerce.material, price: Faker::Commerce.price, sale_status: Faker::Boolean.boolean)
-end
+# 100.times do 
+#   Product.create!(name: Faker::Commerce.product_name, materials: Faker::Commerce.material, price: Faker::Commerce.price, sale_status: Faker::Boolean.boolean)
+# end
+
+
 
 
