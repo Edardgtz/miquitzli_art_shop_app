@@ -3,5 +3,6 @@
   name: @product.name,
   matrials: @product.materials,
   price: @product.price,
-  sale_status: @product.sale_status
+  sale_status: @product.sale_status,
+  images: @product.images[0][:image_url]
 }
