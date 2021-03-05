@@ -1,5 +1,6 @@
 class Order < ApplicationRecord
   belongs_to :user
+  has_many :carted_products
 
   def sub_total
     @subtotal = product.price * quantity
