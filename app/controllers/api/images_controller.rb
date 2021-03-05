@@ -1,6 +1,18 @@
 class Api::ImagesController < ApplicationController
   def index
-    @images = Image.all
+    search_term = params[:search]
+    if search_term
+      @images = Image.where("name ILIKE ?","%#{search_term}%")
+    else
+      @images = Image.all
+    end
+
+    
+    if params[:sort] && params[:sort_order]
+      @images = @images.order(params[:sort] => params[:sort_order])
+    else
+      @images = @images.order(id: :asc)
+    end
     render "index.json.jb"
   end
 

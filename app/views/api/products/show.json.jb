@@ -1,9 +1,1 @@
-{
-  id: @product.id,
-  name: @product.name,
-  matrials: @product.materials,
-  category: @product.category,
-  price: @product.price,
-  sale_status: @product.sale_status,
-  images: @product.images[0][:image_url]
-}
+render partial: 'product.json.jb', locals: {product: @product}
