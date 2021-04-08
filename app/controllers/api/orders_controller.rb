@@ -14,7 +14,7 @@ class Api::OrdersController < ApplicationController
 
     tax = subtotal * tax_rate
 
-    total = tax = subtotal
+    total = tax + subtotal
 
     @order = Order.new(
       user_id: current_user.id,
